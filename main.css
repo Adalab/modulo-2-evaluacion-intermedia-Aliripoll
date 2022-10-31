@@ -40,6 +40,12 @@
   padding: 10px;
 }
 
+.pointsText {
+  letter-spacing: 5px;
+  color: brown;
+  text-transform: capitalize;
+}
+
 .bonusList {
   margin-top: 25px;
   list-style: none;

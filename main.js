@@ -3,6 +3,8 @@
 const btnSelect = document.querySelector('.btnSelect');
 const battleBtn = document.querySelector('.battleBtn');
 const battleText = document.querySelector('.battleText');
+const playerLi = document.querySelector('.playerLi');
+const computerLi = document.querySelector('.computerLi');
 
 function getRandomEvilRace(max) {
     let race = '';   
@@ -27,8 +29,14 @@ function getRandomEvilRace(max) {
 
 const finalEvilRace = getRandomEvilRace(5);
 
-let player = 0;
-let computer = 0;
+/////Bonus 1/////
+let playerScore = 0;
+let computerScore = 0;
+
+playerLi.innerHTML += playerScore;
+computerLi.innerHTML += computerScore;
+
+
 battleBtn.addEventListener('click', (event) => {
     event.preventDefault();
     let result = '';
