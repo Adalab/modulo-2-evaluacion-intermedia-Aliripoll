@@ -2,3 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+.finalBattle {
+  margin-top: 20px;
+}
+.finalBattleText {
+  background-color: sandybrown;
+  width: 250px;
+  height: 30px;
+}
