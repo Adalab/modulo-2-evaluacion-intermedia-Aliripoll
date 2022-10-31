@@ -2,6 +2,7 @@
 
 const btnSelect = document.querySelector('.btnSelect');
 const battleBtn = document.querySelector('.battleBtn');
+const battleText = document.querySelector('.battleText');
 
 function getRandomEvilRace(max) {
     let race = '';   
@@ -39,4 +40,5 @@ battleBtn.addEventListener('click', (event) => {
         result = 'Empate';
     } 
     console.log(result);
+    battleText.innerHTML = result;
 });
