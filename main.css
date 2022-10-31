@@ -15,6 +15,12 @@
   color: rgba(68, 21, 21, 0.725);
 }
 
+.secondText {
+  font-size: 18px;
+  color: rgb(63, 62, 62);
+  font-weight: bold;
+}
+
 .btnSelect {
   height: 25px;
 }

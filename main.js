@@ -49,7 +49,7 @@ battleBtn.addEventListener('click', (event) => {
     else {
         result = 'Empate';
     } 
-    console.log(result);
+    
     battleText.innerHTML = result;
 });
 
