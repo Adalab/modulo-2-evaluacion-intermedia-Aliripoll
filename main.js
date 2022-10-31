@@ -27,6 +27,8 @@ function getRandomEvilRace(max) {
 
 const finalEvilRace = getRandomEvilRace(5);
 
+let player = 0;
+let computer = 0;
 battleBtn.addEventListener('click', (event) => {
     event.preventDefault();
     let result = '';
@@ -42,3 +44,4 @@ battleBtn.addEventListener('click', (event) => {
     console.log(result);
     battleText.innerHTML = result;
 });
+

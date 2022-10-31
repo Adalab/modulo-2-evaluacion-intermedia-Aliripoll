@@ -3,11 +3,48 @@
   padding: 0;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.mainTitle {
+  text-transform: uppercase;
+  color: rgba(68, 21, 21, 0.725);
+}
+
+.btnSelect {
+  height: 25px;
+}
+
+.battleBtn {
+  font-size: 16px;
+  width: 70px;
+  height: 25px;
+  background-color: brown;
+  color: white;
+}
 .beginBattle {
   margin-top: 20px;
 }
 .battleText {
-  background-color: sandybrown;
-  width: 250px;
-  height: 30px;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bonusList {
+  margin-top: 25px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  text-transform: capitalize;
 }
