@@ -4,11 +4,12 @@
 }
 
 .main {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 .mainTitle {
   text-transform: uppercase;
