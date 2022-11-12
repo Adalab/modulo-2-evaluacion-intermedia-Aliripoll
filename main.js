@@ -53,8 +53,10 @@ battleBtn.addEventListener('click', (event) => {
     } 
     else {
         result = 'Empate';
-    } 
-    
-    battleText.innerHTML = result;
+    }   
+    battlepainter(result);  
 });
 
+function battlepainter(result) {
+    battleText.innerHTML = result;
+}
