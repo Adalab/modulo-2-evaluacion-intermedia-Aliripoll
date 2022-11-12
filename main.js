@@ -6,9 +6,13 @@ const battleText = document.querySelector('.battleText');
 const playerLi = document.querySelector('.playerLi');
 const computerLi = document.querySelector('.computerLi');
 
+function getRandomNumber(max) {
+    return Math.ceil(Math.random() * max);
+}
+
 function getRandomEvilRace(max) {
     let race = '';   
-    let randomNumber = Math.ceil(Math.random() * max);
+    let randomNumber = getRandomNumber(max);
     if (randomNumber === 1) {
         race = 2;
     }
