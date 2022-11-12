@@ -25,9 +25,7 @@ function getRandomEvilRace(max) {
         race = 5;
     }   
     return race;
-} 
-
-const finalEvilRace = getRandomEvilRace(5);
+}
 
 /////Bonus 1/////
 let playerScore = 0;
@@ -39,7 +37,10 @@ computerLi.innerHTML += computerScore;
 
 battleBtn.addEventListener('click', (event) => {
     event.preventDefault();
+    
+    const finalEvilRace = getRandomEvilRace(5);
     let result = '';
+    
     if (btnSelect.value > finalEvilRace) {
         result = 'Ha ganado el Ejército del Bien! Enhorabuena.';
     } 
