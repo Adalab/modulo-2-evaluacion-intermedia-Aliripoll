@@ -31,13 +31,9 @@ function getRandomEvilRace(max) {
     return race;
 }
 
-/////Bonus 1/////
-let playerScore = 0;
-let computerScore = 0;
-
-playerLi.innerHTML += playerScore;
-computerLi.innerHTML += computerScore;
-
+function battlePainter(result) {
+    battleText.innerHTML = result;
+}
 
 battleBtn.addEventListener('click', (event) => {
     event.preventDefault();
@@ -54,9 +50,12 @@ battleBtn.addEventListener('click', (event) => {
     else {
         result = 'Empate';
     }   
-    battlepainter(result);  
+    battlePainter(result);  
 });
 
-function battlepainter(result) {
-    battleText.innerHTML = result;
-}
+/////Bonus 1/////
+let playerScore = 0;
+let computerScore = 0;
+
+playerLi.innerHTML += playerScore;
+computerLi.innerHTML += computerScore;
